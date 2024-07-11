@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> TRANSGHO</title>
+</head>
+<body>
+    
+    <!-- HEADER STARTS -->
+    <header class="container">
+        <div class="menu-logo">
+            <i class="bi bi-list"></i>
+            <a href=""><img src="image/logo.png" alt=""></a>
+        </div>
+        <div class="search-history">
+            <i class="bi bi-clock-history"></i>
+        </div>
+    </header>
+    <hr class="divider">
+    <!-- HEADER ENDS -->
+
+    <!-- SECTION TWO STARTS -->
+    <section class="section-two">
+
+        <div class="text-translation">
+            <i class="bi bi-translate"></i>
+            <span>Text</span>
+        </div>
+
+        <!-- Swap button -->
+        <button class="swap-button">
+            <i class="bi bi-arrow-left-right"></i>
+        </button>
+
+        <!-- language labels -->
+        <div class="label">
+            <div class="label-- source-label">
+                <p>Translate from (<span class="lang1">English</span>)</p>
+            </div>
+
+            <div class="label-- target-label">
+                <p>Translated to (<span class="lang2">Ghɔmáláʼ</span>)</p>
+            </div>
+        </div>
+
+        <div class="language-box">
+            <div class="language-box-50 source-language">
+
+                <form class="text-form text-input">
+                    <textarea name="sourceInput" id="sourceInput" cols="30" rows="10" placeholder=""></textarea>
+                </form>
+                <!-- <hr class="divider"> -->
+                <div class="word-count">
+                    <button class="translate-button">translate</button>
+                </div>
+            </div>
+
+            <div class="language-box-50 target-language">
+
+                <form class="text-form text-output">
+                    <textarea name="targetInput" id="targetInput" cols="30" rows="10" placeholder="Translation"></textarea>
+                </form> 
+                <hr class="divider">
+                <div class="word-count">
+                    <i class="bi bi-copy"></i>
+                </div>
+            </div>  
+        </div>
+
+    </section>
+
+    
+<!--     
+      <script>
+        function translateText() {
+          var sourceText = document.getElementById("source-text").value;
+          // Call your translation API or function here to get the translated text
+          var translatedText = "This is a sample translated text.";
+          document.getElementById("translated-text").value = translatedText;
+        }
+      </script> -->
+
+      <script src="main.js"></script>
+</body>
+</html>
